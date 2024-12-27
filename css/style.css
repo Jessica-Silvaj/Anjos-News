@@ -221,9 +221,12 @@ section{
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
     padding:4rem 2rem;
-    margin: 0.2;
+    margin: 0.2%;
 }
-
+span.Encontro {
+    font-size: 3.3rem !important;
+    margin-top: 3%;
+}
 .services .box-container .box img {
     width: 63%;
     justify-self: center;
