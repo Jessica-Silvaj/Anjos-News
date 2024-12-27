@@ -221,10 +221,12 @@ section{
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
     padding:4rem 2rem;
+    margin: 0.2;
 }
 
 .services .box-container .box img {
     width: 63%;
+    justify-self: center;
 }
 
 .services .box-container .box h3{
