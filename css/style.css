@@ -612,53 +612,147 @@ video {
     background: var(--black);
 }
 
-.footer{
-    margin-top: 1rem;
-    background: var(--bg);
-    padding-bottom: 9rem;
+/* Estilo da ondulação */
+.custom-shape-divider-top {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg); 
 }
 
-.footer .box-container{
-    display:grid;
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: var(--bg); 
+}
+
+
+.footer {
+    background: var(--bg); 
+    padding: 4rem 2rem 9rem; 
+    position: relative;
+    overflow: hidden; 
+    
+}
+
+.footer .box-container {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
+    padding-bottom: 2rem; 
+    margin-left: 290px;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
     font-size: 2.5rem;
-    padding:1rem 0;
-    color:var(--black);
+    padding: 1rem 0;
+    color: var(--black);
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
     display: block;
     font-size: 1.5rem;
-    padding:1rem 0;
-    color:var(--light-color);
+    padding: 0.5rem 0;
+    color: var(--light-color);
+    transition: color 0.3s, padding-right 0.3s;
 }
 
-.footer .box-container .box a i{
-    padding-right: .5rem;
-    color:var(--main-color);
+.footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color: var(--main-color);
 }
 
-.footer .box-container .box a:hover i{
+.footer .box-container .box a:hover {
+    color: var(--main-color);
+}
+
+.footer .box-container .box a:hover i {
     padding-right: 2rem;
 }
 
-.footer .credit{
+.footer .credit {
     color: var(--black);
     text-align: center;
-    padding:1rem;
-    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-family: 'PoppinsRegular', sans-serif;
     padding-top: 2rem;
-    font-size: 2rem;
+    margin-top: 2rem;
+    border-top: 0.1rem solid var(--rosa-intenso);
 }
 
-.footer .credit span{
-    color:var(--main-color);
+.footer .credit span {
+    color: var(--main-color);
+    font-weight: bold;
 }
 
+.footer .cloud {
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    width: 100%;
+    height: 18rem;
+    background: url(../images/cloud.png) repeat-x;
+    background-size: 250rem 18rem;
+    animation: cloud 10s linear infinite;
+    z-index: 1; /* Nuvens abaixo do texto */
+}
+
+.footer .cloud-1 {
+    opacity: 0.5;
+    height: 20rem;
+    background-size: 250rem 20rem;
+    animation-direction: reverse;
+    animation-duration: 15s;
+}
+
+.footer .cloud-2 {
+    opacity: 0.3;
+    height: 15rem;
+    background-size: 200rem 15rem;
+    bottom: -7rem;
+    animation-duration: 18s;
+}
+
+/* Animação suave das nuvens */
+@keyframes cloud {
+    0% {
+        background-position-x: 0rem;
+    }
+    100% {
+        background-position-x: -250rem;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 1rem 7rem;
+    }
+
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        gap: 1rem;
+    }
+
+    .footer .cloud {
+        height: 12rem;
+        background-size: 200rem 12rem;
+    }
+
+    .footer .cloud-1 {
+        height: 14rem;
+    }
+
+    .footer .cloud-2 {
+        height: 10rem;
+    }
+}
 
 
 
