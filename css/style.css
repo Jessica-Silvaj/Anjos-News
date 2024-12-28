@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
 
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.otf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/Poppins-Regular.otf') format('opentype');
+    font-display: swap;
+}
+
 :root{
     --main-color:#e8786e;
     --black:#555;
@@ -41,7 +53,8 @@ a.arearestri {
     color: #ff3d6c !important;
 }
 *{
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
