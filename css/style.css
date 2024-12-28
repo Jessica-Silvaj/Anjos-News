@@ -536,8 +536,8 @@ video {
 .contact .icons-container .icons{
     padding: 2.5rem;
     text-align: center;
-    border: var(--border);
-    border-radius: .5rem;
+    border:  1.5rem, solid #FF007F;
+    border-radius: 1.5rem;
     box-shadow: var(--box-shadow);
 }
 
@@ -550,6 +550,7 @@ video {
     background: var(--bg);
     border-radius: 50%;
 }
+
 
 .contact .icons-container .icons h3{
     color:var(--black);
@@ -610,6 +611,21 @@ video {
 
 .contact .row form .btn:hover{
     background: var(--black);
+}
+
+.phone {
+    justify-content: space-between;
+    gap: 10px; /* Espaço entre número e nome */
+}
+
+.phone span {
+    flex: 0 0 auto; /* Garante que o número não será cortado */
+    min-width: 120px; /* Ajuste para consistência visual */
+}
+
+.phone b {
+    flex: 1;
+    text-align: left;
 }
 
 /* Estilo da ondulação */
