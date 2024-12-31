@@ -30,328 +30,266 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../css/fontawesome.css" />
-
+    <!-- CSS do Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
-
+    <!-- Menu -->
     <header class="header">
-
-        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
-
+        <a href="#" class="logo"><img src="images/logo.png" alt="Logo"></a>
         <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#pricing">Equipe</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#horoscopo">Horóscopo da Rosa</a>
+            <a href="#comerciais">Nossos Comerciais</a>
             <a href="#services">Sobre Nós</a>
-            <a href="#portfolio">Nossas avaliações</a>
+            <a href="#profissionais">Nossos Profissionais</a>
+            <a href="#portfolio">Feedback Jornal</a>
             <a href="#contact">Contato</a>
-            <a class="arearestri" href="#" onclick="checkPassword()">Area Restrita</a>
+            <a class="arearestri" href="#" onclick="checkPassword()">Área Restrita</a>
         </nav>
-
         <div id="menu-btn" class="fas fa-bars"></div>
-
     </header>
-
+    <!-- End Menu -->
+    <!-- Banner -->
     <section class="home" id="home">
         <div class="content">
-            <h3>O jornal que te mostra a verdade</h3>
+            <h3>Bem-vindo ao Anjos News</h3>
             <p>
-                Se a vida é um palco, nós somos o roteiro! Notícias e diversão, tudo num só jornal: somos o 'Anjos News,
-                a comédia da informação'!</p>
+                Quer transformar humor em manchetes?<br/> No <b>Anjos News</b>, a comédia da informação, a vida vira notícia e a diversão nunca para! 🎭📰<br/>   
+                Venha brilhar no palco da criatividade e fazer parte do jornal mais divertido do pedaço!
+            </p>
             <a href="https://forms.gle/GPWzWtNUMViiVrG29" target="_blank" class="btn">Trabalhe Conosco</a>
         </div>
-
         <div class="image">
             <video autoplay muted loop width="100%" height="auto">
                 <source src="video/video01.mp4" type="video/mp4">
             </video>
         </div>
-
         <div class="cloud cloud-1"></div>
         <div class="cloud cloud-2"></div>
-
     </section>
-    <section class="services" id="services">
+    <!-- End Banner -->
 
-        <h1 class="heading"> Proximos<span>Eventos</span> </h1>
+    <!-- Nóticias -->
+    <section id="noticias" class="noticias-section">
+        <h1 class="heading"> Últimas<span>Notícias</span> </h1>
+        
+    </section>
+    <!-- End Noticia-->
 
-        <div class="boxpod-container">
-
-            <div class="boxpod">
-                <div class="boxpodIMG">
-                    <img src="images/podeanjo.png">
-                </div>
-                <div class="boxpodTXT">
-                    <h3>De quem é a Historia</h3>
-                    <p>5 participantes contam histórias curiosas, mas apenas 1 fala a verdade. Os outros 4 mentem de
-                        forma convincente. Após ouvirem todas as histórias, os 5 apresentadores interrogam os
-                        participantes para identificar contradições e tentar desmascarar os mentirosos.
-
-                        Depois de uma rodada de debates, cada apresentador vota em quem acha que está dizendo a verdade.
-                        A revelação acontece no final. </p>
-                    <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" class="btn">Inscreva-se</a>
-                </div>
-            </div>
-
-            <div class="boxpod">
-                <div class="boxpodIMG">
-                    <img src="images/the voice anjos.png">
-                </div>
-                <div class="boxpodTXT">
-                    <h3>The Voice Anjos</h3>
-                    <p> show de talentos promovido pelo AnjosNews, onde moradores da Cidade dos Anjos mostram suas
-                        habilidades únicas no palco. Com apresentações emocionantes, jurados especiais e votação
-                        interativa do público, o evento celebra a diversidade e revela estrelas locais. O vencedor leva
-                        prêmios exclusivos e destaque no jornal, em uma noite repleta de emoção, humor e talentos
-                        inesquecíveis.</p>
-                    <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" class="btn">Inscreva-se</a>
-                </div>
-            </div>
+    
+    <!-- Eventos -->
+    <section id="eventos" class="eventos-section">
+        
+        <!-- Separador -->
+        <div class="svg-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,0 Q 100,100 200,0" fill="#ffff"/>
+            </svg>
         </div>
-    </section>
+        <!-- End Separador -->
 
-    <section class="services" id="services">
-        <h1 class="heading"> Nossos <span>Comerciais</span> </h1>
-
-        <div class="box-container slick-slider">
-
-            <div class="box">
-                <img src="images/arcanjos.png" alt="Arcanjo">
-                <h3>Arcanjo</h3>
-                <p>Atuamos na Prestação de Serviços de Proteção Armada à pessoas, cargas e/ou eventos, mas também em
-                    Ações de Defesa e Criação de Eventos dos mais variados.</p>
-                <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" class="btn">Seja um Arcanjo</a>
-                <a href="https://youtu.be/K-O9YpGYRkw?si=DoUPFRWvPc1_L1ft" target="_blank" class="btn">Comercial</a>
-            </div>
-
-            <div class="box">
-                <video autoplay muted loop>
-                    <source src="video/abertura.mp4" type="video/mp4">
-                </video>
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-                <a href="#" class="btn">Veja todas as notícias</a>
-            </div>
-
-            <div class="box">
-                <video autoplay muted loop>
-                    <source src="video/abertura.mp4" type="video/mp4">
-                </video>
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-                <a href="#" class="btn">Veja todas as notícias</a>
-            </div>
-
-            <div class="box">
-                <video autoplay muted loop>
-                    <source src="video/abertura.mp4" type="video/mp4">
-                </video>
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-                <a href="#" class="btn">Veja todas as notícias</a>
-            </div>
-            <div class="box">
-                <video autoplay muted loop>
-                    <source src="video/abertura.mp4" type="video/mp4">
-                </video>
-                <h3>Lorem Ipsum Dolor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-                <a href="#" class="btn">Veja todas as notícias</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="review" id="review">
-
-        <h1 class="heading"> Central <span>Desabafo</span> </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="user">
-                    <img src="images/pic-1.png" alt="">
-                    <div class="info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+        <h1 class="heading">Próximos <span>Eventos</span></h1>
+        <div class="timeline">
+            <div class="event">
+                <div class="timeline-dot"></div>
+                <div class="event-details">
+                    <div class="event-content">
+                        <img src="./images/podeanjo.png" alt="De quem é a Historia?" class="event-image">
+                        <div class="event-text">
+                            <h3>De quem é a Historia?</h3>
+                            <p>
+                                5 participantes contam histórias curiosas, mas apenas 1 fala a verdade. Os outros 4 mentem de
+                                forma convincente. Após ouvirem todas as histórias, os 5 apresentadores interrogam os
+                                participantes para identificar contradições e tentar desmascarar os mentirosos.
+                            </p>
+                            <div class="event-btn">
+                                <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" >Inscreva-se</a>
+                            </div>
                         </div>
                     </div>
-                    <i class="fas fa-quote-right"></i>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rerum ducimus, fuga numquam itaque modi
-                    magnam officiis obcaecati! Aliquid delectus aperiam harum voluptas animi unde sapiente quidem
-                    laudantium facere? Deserunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rerum explicabo illo libero modi quos
-                    laboriosam, totam eligendi. Adipisci, itaque.</p>
             </div>
+            <div class="event">
+                <div class="timeline-dot"></div>
+                <div class="event-details">
+                    <div class="event-content">
+                        <img src="./images/the voice anjos.png" alt="The Voice Anjos" class="event-image">
+                        <div class="event-text">
+                            <h3>The Voice Anjos</h3>
+                            <p>
+                                Show de talentos promovido pelo AnjosNews, onde moradores da Cidade dos Anjos mostram suas
+                                habilidades únicas no palco. Com apresentações emocionantes, jurados especiais e votação
+                                interativa do público, o evento celebra a diversidade e revela estrelas locais.
+                            </p>
+                            <div class="event-btn">
+                                <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>                        </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="box">
-                <div class="user">
-                    <img src="images/pic-2.png" alt="">
-                    <div class="info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+          <!-- Separador -->
+        <div class="svg-inverse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,100 Q 100,0 200,100" fill="#ffff"/>
+            </svg>
+        </div>
+    <!-- End Separador -->
+
+    </section>
+    <!-- End Eventos -->
+
+    <!-- Horóscopo -->
+    <section id="horoscopo" class="horoscopo-section">
+        <!-- Separador -->
+        <div class="svg-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,0 Q 100,100 200,0" fill="#ffff" />
+            </svg>
+        </div>
+        <!-- End Separador -->
+    
+        <h1 class="heading">Horóscopo da <span>Rosa</span></h1>
+    
+        <!-- Card Maior para os signos -->
+        <div class="zodiac-big-card">
+            <div class="zodiac-container">
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Aries-removebg-preview.png" alt="Áries">
+                    <strong>Áries</strong>
+                    <div class="zodiac-description">Hoje é um bom dia para iniciar algo novo.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Touro-removebg-preview.png" alt="Touro">
+                    <strong>Touro</strong>
+                    <div class="zodiac-description">Mantenha-se firme em suas decisões.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Gemeos-removebg-preview.png" alt="Gêmeos">
+                    <strong>Gêmeos</strong>
+                    <div class="zodiac-description">Converse mais, sua comunicação será essencial.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Cancer-removebg-preview.png" alt="Câncer">
+                    <strong>Câncer</strong>
+                    <div class="zodiac-description">Momento de introspecção e carinho.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Leao-removebg-preview.png" alt="Leão">
+                    <strong>Leão</strong>
+                    <div class="zodiac-description">Brilhe, mas cuidado com os excessos.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Virgem-removebg-preview.png" alt="Virgem">
+                    <strong>Virgem</strong>
+                    <div class="zodiac-description">Organize suas ideias e seja mais flexível.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Libra-removebg-preview.png" alt="Libra">
+                    <strong>Libra</strong>
+                    <div class="zodiac-description">Busque o equilíbrio nas suas decisões.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Escorpiao-removebg-preview.png" alt="Escorpião">
+                    <strong>Escorpião</strong>
+                    <div class="zodiac-description">Intensidade é sua marca, use-a com sabedoria.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Sagitario-removebg-preview.png" alt="Sagitário">
+                    <strong>Sagitário</strong>
+                    <div class="zodiac-description">Aventure-se, mas com cautela nos detalhes.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Capricornio-removebg-preview.png" alt="Capricórnio">
+                    <strong>Capricórnio</strong>
+                    <div class="zodiac-description">Foco e disciplina trarão bons resultados.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Aquario-removebg-preview.png" alt="Aquário">
+                    <strong>Aquário</strong>
+                    <div class="zodiac-description">Inove, mas ouça os conselhos dos outros.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Peixes-removebg-preview.png" alt="Peixes">
+                    <strong>Peixes</strong>
+                    <div class="zodiac-description">Siga sua intuição e cultive empatia.</div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Separador -->
+        <div class="svg-inverse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,100 Q 100,0 200,100" fill="#ffff" />
+            </svg>
+        </div>
+        <!-- End Separador -->
+    </section>
+    <!-- End Horóscopo -->
+
+    
+    <!-- Comerciais -->
+    <section id="comerciais" class="comercial-section">
+        <h1 class="heading">Nossos <span>Comerciais</span></h1>
+        
+        <div class="carousel">    
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 1">
+                        <h3>Arcanjos</h3>
+                        <p>A Organização Arcanjos é uma empresa Legal, atuamos na Prestação de Serviços de Proteção Armada em algumas áreas específicas, mediante Contrato, bem como na Realização de Eventos e Ações de Defesa.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
                         </div>
                     </div>
-                    <i class="fas fa-quote-right"></i>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rerum ducimus, fuga numquam itaque modi
-                    magnam officiis obcaecati! Aliquid delectus aperiam harum voluptas animi unde sapiente quidem
-                    laudantium facere? Deserunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rerum explicabo illo libero modi quos
-                    laboriosam, totam eligendi. Adipisci, itaque.</p>
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <img src="images/pic-3.png" alt="">
-                    <div class="info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 2">
+                        <h3>Arte e Vida</h3>
+                        <p>Descrição do comercial 2.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
                         </div>
                     </div>
-                    <i class="fas fa-quote-right"></i>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 3">
+                        <h3>Comercial 3</h3>
+                        <p>Descrição do comercial 3.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 4">
+                        <h3>Comercial 4</h3>
+                        <p>Descrição do comercial 3.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 5">
+                        <h3>Comercial 5</h3>
+                        <p>Descrição do comercial 3.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rerum ducimus, fuga numquam itaque modi
-                    magnam officiis obcaecati! Aliquid delectus aperiam harum voluptas animi unde sapiente quidem
-                    laudantium facere? Deserunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rerum explicabo illo libero modi quos
-                    laboriosam, totam eligendi. Adipisci, itaque.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="portfolio" id="portfolio">
-
-        <h1 class="heading"> Categorias<span>Noticias
-            </span> </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <span>Noticias</span>
-                <img src="images/port-img1.jpg" alt="">
-                <div class="content">
-                    <h3>Ultimas noticias</h3>
-                    <p>fresquinhas</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <span>Eventos</span>
-                <img src="images/port-img2.jpg" alt="">
-                <div class="content">
-                    <h3>web design</h3>
-                    <p>1st may, 2021</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <span>Trabalhos</span>
-                <img src="images/port-img3.jpg" alt="">
-                <div class="content">
-                    <h3>web design</h3>
-                    <p>1st may, 2021</p>
-                </div>
-            </div>
-
-            <div class="box">
-                <span>Politica</span>
-                <img src="images/port-img4.jpg" alt="">
-                <div class="content">
-                    <h3>web design</h3>
-                    <p>1st may, 2021</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="services" id="services">
-
-        <h1 class="heading"> Nossos <span>Profissionais</span> </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/amylee.png" alt="">
-                <h3>Jornalista</h3>
-                <p>Meio Barraqueira mas esta sempre atras da verdade</p>
-                <a href="#" class="btn">Fulana de fulana</a>
-            </div>
-
-            <div class="box">
-                <img src="images/amylee.png" alt="">
-                <h3>Camera</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-                <a href="#" class="btn">Fulano de fulano</a>
-            </div>
-
-            <div class="box">
-                <img src="images/amylee.png" alt="">
-                <h3>Jornalista</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-                <a href="#" class="btn">Fulano de fulano</a>
-            </div>
-
-            <div class="box">
-                <img src="images/amylee.png" alt="">
-                <h3>marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-                <a href="#" class="btn">Fulano de fulano</a>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="contact" id="contact">
-
-        <h1 class="heading"> Contate <span>nós</span> </h1>
-
-        <div class="icons-container">
-            <div class="icons">
-                <i class="fas fa-phone"></i>
-                <h3>Número de telefone</h3>
-                <p class="phone">(055) 352-938 -> <b>Dayse Bettencourt</b></p>
-                <p class="phone">(055) 661-896 -> <b>Franchesca Alba</b></p>
-                <p class="phone">(055) 268-105 -> <b>Catrina Martinez</b></p>
-            </div>
-            <div class="icons">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <p><b>contato@exemplo.com</b></p>
-            </div>
-            <div class="icons">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Localização</h3>
-                <p><b>Wazel Newz proximo ao banco do número 6</b></p>
             </div>
         </div>
     </section>
+    <!-- End Comerciais -->
 
 
+
+    <!-- Separador -->
     <div class="custom-shape-divider-top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
@@ -359,6 +297,7 @@
                 class="shape-fill"></path>
         </svg>
     </div>
+    <!-- End Separador -->
 
     <section class="footer">
         <div class="box-container">
@@ -377,7 +316,7 @@
                 <a href="#footer"><i class="fas fa-phone"></i> (055) 661-896 -> Franchesca Alba</a>
                 <a href="#footer"><i class="fas fa-phone"></i> (055) 268-105 -> Catrina Martinez</a>
                 <a href="#footer"><i class="fas fa-envelope"></i> contato@exemplo.com</a>
-                <a href="#footer"><i class="fas fa-map-marker-alt"></i> Wazel Newz proximo ao banco do número 6</a>
+                <a href="#footer"><i class="fas fa-map-marker-alt"></i> Life Invader proximo ao banco do número 6</a>
             </div>
 
             <div class="box">
@@ -397,8 +336,16 @@
         <div class="cloud cloud-2"></div>
     </section>
 
-    <script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+    
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script>
         function checkPassword() {
             const password = prompt("Digite a senha para acessar a página de pagamento:");
 
@@ -409,11 +356,6 @@
             }
         }
     </script>
-    <!-- custom js file link  -->
-    <script src="js/script.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
 </body>
 
 </html>
