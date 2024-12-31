@@ -1,0 +1,99 @@
+/* Responsivo.css Ajustado */
+
+/* Estilo base para pequenos ajustes */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PoppinsRegular', sans-serif;
+}
+
+/* Menu Responsivo */
+#menu-btn {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--bg);
+        padding: 1rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+/* Banner Responsivo */
+.home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home .image {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+.home .content {
+    padding: 1rem;
+}
+
+/* Seção de Eventos */
+.event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.event-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.event-details {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* Footer Responsivo */
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Ajustes Gerais */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2.4rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .event-text p {
+        font-size: 1.2rem;
+    }
+}

@@ -645,6 +645,43 @@ a.arearestri {
     transform: scale(1.05);
 }
 
+/* Sobre Nós */
+
+.sobre-nos-section {
+    background-color: var(--bg);
+    position: relative;
+    text-align: center;
+    margin-bottom: 9rem;
+    margin-top: -81px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* Nossos Profissionais */
+.profissionais-section {
+    background-color: var(--amarelo);
+    position: relative;
+    text-align: center;
+    margin-bottom: 9rem;
+    margin-top: -81px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/* Feedback */
+
+.feedback-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 9rem;
+    margin-top: -81px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 
 /* footer */
