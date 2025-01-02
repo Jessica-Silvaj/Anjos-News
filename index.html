@@ -1,118 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+    <title>Anjos News</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website desgin tutorial</title>
 
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/180x180.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/32x32.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/24x24.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/16x16.ico">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://x.com/AnjosNews">
+    <meta name="twitter:title" content="Anjos News | O jornal mais divertido e criativo">
+    <meta name="twitter:description"
+        content="Venha fazer parte do time AnjosNews! Transformamos fofocas em arte e notícias em diversão, com criatividade e um toque irreverente.">
+    <meta name="twitter:image" content="https://example.com/anjosnews-banner.jpg">
+    <!-- Substitua pela URL da imagem desejada -->
+
+    <!-- Webfonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/fontawesome.css" />
+    <!-- CSS do Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/responsivo.css"> -->
 
 </head>
+
 <body>
-
-<header class="header">
-
-    <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#pricing">Equipe</a>
-        <a href="#services">Sobre Nós</a>
-        <a href="#portfolio">Nossas avaliações</a>
-        <a href="#contact">contact</a>
-        <a class="arearestri" href="#" onclick="checkPassword()">Area Restrita</a>
-    </nav>
-
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-</header>
-
-<section class="home" id="home">
-
-    <div class="content">
-        <h3>O jornal que te mostra a verdade</h3>
-        <p>
-        Se a vida é um palco, nós somos o roteiro! Notícias e diversão, tudo num só jornal: somos o 'AnjosNews, a comédia da informação'!</p>
-        <a href="https://forms.gle/GPWzWtNUMViiVrG29" target="_blank" class="btn">Trabalhe Conosco</a>
-    </div>
-
-    <div class="image">
-        <img src="images/Live.svg" alt="">
-    </div>
-
-    <div class="cloud cloud-1"></div>
-    <div class="cloud cloud-2"></div>
-
-</section>
-<section class="services" id="services">
-
-    <h1 class="heading"> Proximos<span>Eventos</span> </h1>
-
-    <div class="boxpod-container">
-
-        <div class="boxpod">
-            <div class="boxpodIMG">
-                <img src="images/podeanjo.png">
-            </div>
-            <div class="boxpodTXT">
-                <h3>De quem é a Historia</h3>
-                <p>5 participantes contam histórias curiosas, mas apenas 1 fala a verdade. Os outros 4 mentem de forma convincente. Após ouvirem todas as histórias, os 5 apresentadores interrogam os participantes para identificar contradições e tentar desmascarar os mentirosos.
-
-                    Depois de uma rodada de debates, cada apresentador vota em quem acha que está dizendo a verdade. A revelação acontece no final. </p>
-                <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" class="btn">Inscreva-se</a>
-            </div>
+    <!-- Menu -->
+    <header class="header">
+        <a href="#" class="logo"><img src="images/logo.png" alt="Logo"></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#horoscopo">Horóscopo da Rosa</a>
+            <a href="#comerciais">Nossos Comerciais</a>
+            <a href="#sobre-nos">Sobre Nós</a>
+            <a href="#profissionais">Nossos Profissionais</a>
+            <a href="#feedback">Feedback Jornal</a>
+            <a href="#contato">Contato</a>
+            <a class="arearestri" href="#" onclick="checkPassword()">Área Restrita</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    <!-- End Menu -->
+    <!-- Banner -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Bem-vindo ao Anjos News</h3>
+            <p>
+                Quer transformar humor em manchetes?<br/> No <b>Anjos News</b>, a comédia da informação, a vida vira notícia e a diversão nunca para! 🎭📰<br/>   
+                Venha brilhar no palco da criatividade e fazer parte do jornal mais divertido do pedaço!
+            </p>
+            <a href="https://forms.gle/GPWzWtNUMViiVrG29" target="_blank" class="btn">Trabalhe Conosco</a>
         </div>
-
-        <div class="boxpod">
-            <div class="boxpodIMG">
-                <img src="images/the voice anjos.png">
-            </div>
-            <div class="boxpodTXT">
-                <h3>the voice anjos</h3>
-                <p> show de talentos promovido pelo AnjosNews, onde moradores da Cidade dos Anjos mostram suas habilidades únicas no palco. Com apresentações emocionantes, jurados especiais e votação interativa do público, o evento celebra a diversidade e revela estrelas locais. O vencedor leva prêmios exclusivos e destaque no jornal, em uma noite repleta de emoção, humor e talentos inesquecíveis.</p>
-                <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" class="btn">Inscreva-se</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services" id="services">
-    <h1 class="heading"> Nossos <span>Comerciais</span> </h1>
-
-    <div class="box-container slick-slider">
-
-        <div class="box">
-            <img src="images/arcanjos.png" alt="Arcanjo">
-            <h3>Arcanjo</h3>
-            <p>Atuamos na Prestação de Serviços de Proteção Armada à pessoas, cargas e/ou eventos, mas também em Ações de Defesa e Criação de Eventos dos mais variados.</p>
-            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" class="btn">Seja um Arcanjo</a>
-            <a href="https://youtu.be/K-O9YpGYRkw?si=DoUPFRWvPc1_L1ft" target="_blank" class="btn">Comercial</a>
-        </div>
-
-        <div class="box">
-            <video autoplay muted loop>
-                <source src="video/abertura.mp4" type="video/mp4">
+        <div class="image">
+            <video autoplay muted loop width="100%" height="auto">
+                <source src="video/video01.mp4" type="video/mp4">
             </video>
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-            <a href="#" class="btn">Veja todas as notícias</a>
         </div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+    </section>
+    <!-- End Banner -->
 
-        <div class="box">
-            <video autoplay muted loop>
-                <source src="video/abertura.mp4" type="video/mp4">
-            </video>
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, animi?</p>
-            <a href="#" class="btn">Veja todas as notícias</a>
+    <!-- Nóticias -->
+    <section id="noticias" class="noticias-section">
+        <h1 class="heading"> Últimas<span>Notícias</span> </h1>
+        
+    </section>
+    <!-- End Noticia-->
+
+    <!-- Eventos -->
+    <section id="eventos" class="eventos-section">
+        
+        <!-- Separador -->
+        <div class="svg-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,0 Q 100,100 200,0" fill="#ffff"/>
+            </svg>
         </div>
+        <!-- End Separador -->
 
+<<<<<<< HEAD
         <div class="box">
             <video autoplay muted loop>
                 <source src="video/abertura.mp4" type="video/mp4">
@@ -198,54 +180,320 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
+=======
+        <h1 class="heading">Próximos <span>Eventos</span></h1>
+        <div class="timeline">
+            <div class="event">
+                <div class="timeline-dot"></div>
+                <div class="event-details">
+                    <div class="event-content">
+                        <img src="./images/podeanjo.png" alt="De quem é a Historia?" class="event-image">
+                        <div class="event-text">
+                            <h3>De quem é a Historia?</h3>
+                            <p>
+                                5 participantes contam histórias curiosas, mas apenas 1 fala a verdade. Os outros 4 mentem de
+                                forma convincente. Após ouvirem todas as histórias, os 5 apresentadores interrogam os
+                                participantes para identificar contradições e tentar desmascarar os mentirosos.
+                            </p>
+                            <div class="event-btn">
+                                <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank" >Inscreva-se</a>
+                            </div>
+                        </div>
+>>>>>>> f0b273c2f011daeb59f5c98950f70d98ec71a21a
                     </div>
                 </div>
-                <i class="fas fa-quote-right"></i>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rerum ducimus, fuga numquam itaque modi magnam officiis obcaecati! Aliquid delectus aperiam harum voluptas animi unde sapiente quidem laudantium facere? Deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rerum explicabo illo libero modi quos laboriosam, totam eligendi. Adipisci, itaque.</p>
+            <div class="event">
+                <div class="timeline-dot"></div>
+                <div class="event-details">
+                    <div class="event-content">
+                        <img src="./images/the voice anjos.png" alt="The Voice Anjos" class="event-image">
+                        <div class="event-text">
+                            <h3>The Voice Anjos</h3>
+                            <p>
+                                Show de talentos promovido pelo AnjosNews, onde moradores da Cidade dos Anjos mostram suas
+                                habilidades únicas no palco. Com apresentações emocionantes, jurados especiais e votação
+                                interativa do público, o evento celebra a diversidade e revela estrelas locais.
+                            </p>
+                            <div class="event-btn">
+                                <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>                        </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
 
-        <div class="box">
-            <div class="user">
-                <img src="images/pic-2.png" alt="">
-                <div class="info">
-                    <h3>john deo</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+          <!-- Separador -->
+        <div class="svg-inverse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,100 Q 100,0 200,100" fill="#ffff"/>
+            </svg>
+        </div>
+    <!-- End Separador -->
+
+    </section>
+    <!-- End Eventos -->
+
+    <!-- Horóscopo -->
+    <section id="horoscopo" class="horoscopo-section">
+        <!-- Separador -->
+        <div class="svg-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,0 Q 100,100 200,0" fill="#ffff" />
+            </svg>
+        </div>
+        <!-- End Separador -->
+    
+        <h1 class="heading">Horóscopo da <span>Rosa</span></h1>
+    
+        <!-- Card Maior para os signos -->
+        <div class="zodiac-big-card">
+            <div class="zodiac-container">
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Aries-removebg-preview.png" alt="Áries">
+                    <strong>Áries</strong>
+                    <div class="zodiac-description">Hoje é um bom dia para iniciar algo novo.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Touro-removebg-preview.png" alt="Touro">
+                    <strong>Touro</strong>
+                    <div class="zodiac-description">Mantenha-se firme em suas decisões.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Gemeos-removebg-preview.png" alt="Gêmeos">
+                    <strong>Gêmeos</strong>
+                    <div class="zodiac-description">Converse mais, sua comunicação será essencial.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Cancer-removebg-preview.png" alt="Câncer">
+                    <strong>Câncer</strong>
+                    <div class="zodiac-description">Momento de introspecção e carinho.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Leao-removebg-preview.png" alt="Leão">
+                    <strong>Leão</strong>
+                    <div class="zodiac-description">Brilhe, mas cuidado com os excessos.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Virgem-removebg-preview.png" alt="Virgem">
+                    <strong>Virgem</strong>
+                    <div class="zodiac-description">Organize suas ideias e seja mais flexível.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Libra-removebg-preview.png" alt="Libra">
+                    <strong>Libra</strong>
+                    <div class="zodiac-description">Busque o equilíbrio nas suas decisões.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Escorpiao-removebg-preview.png" alt="Escorpião">
+                    <strong>Escorpião</strong>
+                    <div class="zodiac-description">Intensidade é sua marca, use-a com sabedoria.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Sagitario-removebg-preview.png" alt="Sagitário">
+                    <strong>Sagitário</strong>
+                    <div class="zodiac-description">Aventure-se, mas com cautela nos detalhes.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Capricornio-removebg-preview.png" alt="Capricórnio">
+                    <strong>Capricórnio</strong>
+                    <div class="zodiac-description">Foco e disciplina trarão bons resultados.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Aquario-removebg-preview.png" alt="Aquário">
+                    <strong>Aquário</strong>
+                    <div class="zodiac-description">Inove, mas ouça os conselhos dos outros.</div>
+                </div>
+                <div class="zodiac-card">
+                    <img src="./images/zodiaco/Peixes-removebg-preview.png" alt="Peixes">
+                    <strong>Peixe</strong>
+                    <div class="zodiac-description">Siga sua intuição e cultive empatia.</div>
+                </div>
+            </div>
+        </div>
+        <!-- Separador -->
+        <div class="svg-inverse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,100 Q 100,0 200,100" fill="#ffff" />
+            </svg>
+        </div>
+        <!-- End Separador -->
+    </section>
+    <!-- End Horóscopo -->
+
+    <!-- Comerciais -->
+    <section id="comerciais" class="comercial-section">
+        <h1 class="heading">Nossos <span>Comerciais</span></h1>
+        
+        <div class="carousel">    
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 1">
+                        <h3>Arcanjos</h3>
+                        <p>A Organização Arcanjos é uma empresa Legal, atuamos na Prestação de Serviços de Proteção Armada em algumas áreas específicas, mediante Contrato, bem como na Realização de Eventos e Ações de Defesa.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 2">
+                        <h3>Arte e Vida</h3>
+                        <p>Descrição do comercial 2.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 3">
+                        <h3>Comercial 3</h3>
+                        <p>Descrição do comercial 3.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 4">
+                        <h3>Comercial 4</h3>
+                        <p>Descrição do comercial 3.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Arcanjos.png" alt="Comercial 5">
+                        <h3>Comercial 5</h3>
+                        <p>Descrição do comercial 3.</p>
+                        <div class="btn-form">
+                            <a href="https://forms.gle/JfN176pUjH5Z1npcA" target="_blank">Inscreva-se</a>
+                        </div>
                     </div>
                 </div>
-                <i class="fas fa-quote-right"></i>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rerum ducimus, fuga numquam itaque modi magnam officiis obcaecati! Aliquid delectus aperiam harum voluptas animi unde sapiente quidem laudantium facere? Deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rerum explicabo illo libero modi quos laboriosam, totam eligendi. Adipisci, itaque.</p>
         </div>
+    </section>
+    <!-- End Comerciais -->
 
-        <div class="box">
-            <div class="user">
-                <img src="images/pic-3.png" alt="">
-                <div class="info">
-                    <h3>john deo</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
+    <!-- Sobre Nós -->
+    <section id="sobre-nos" class="sobre-nos-section">
+        <!-- Separador superior -->
+        <div class="svg-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,0 Q100,100 200,0" fill="#fff"></path>
+            </svg>
+        </div>
+        <!-- Fim do separador superior -->
+    
+        <!-- Título -->
+        <h1 class="heading">
+            Sobre <span>Nós</span>
+        </h1>
+        <!-- Fim do título -->
+    
+        <!-- Breve descrição -->
+        <p class="description">
+            Somos um jornal comprometida em trazer informações precisas, relevantes e de qualidade. <br/>
+            Atuamos com ética e responsabilidade para manter você bem informado sobre os acontecimentos locais. <br/>
+            Nosso objetivo é conectar pessoas e ideias, promovendo a transparência e o diálogo por meio de notícias e conteúdos investigativos.
+        </p>
+        <!-- Fim da descrição -->
+    
+        <!-- Habilidades -->
+        <div class="skills-container">
+            <!-- Habilidade 1 -->
+            <div class="skill">
+                <div class="icon-circle">
+                    <i class="fas fa-newspaper"></i>
                 </div>
-                <i class="fas fa-quote-right"></i>
+                <h3>Jornalismo</h3>
+                <p>Produção de notícias com credibilidade e imparcialidade.</p>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rerum ducimus, fuga numquam itaque modi magnam officiis obcaecati! Aliquid delectus aperiam harum voluptas animi unde sapiente quidem laudantium facere? Deserunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rerum explicabo illo libero modi quos laboriosam, totam eligendi. Adipisci, itaque.</p>
+            <!-- Habilidade 2 -->
+            <div class="skill">
+                <div class="icon-circle">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Investigação</h3>
+                <p>Reportagens investigativas aprofundadas para desvendar a verdade.</p>
+            </div>
+            <!-- Habilidade 3 -->
+            <div class="skill">
+                <div class="icon-circle">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Conexão</h3>
+                <p>Fortalecemos o diálogo entre diferentes pontos de vista.</p>
+            </div>
+            <!-- Habilidade 4 -->
+            <div class="skill">
+                <div class="icon-circle">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Comunicação</h3>
+                <p>Conteúdo acessível e abrangente para todos os públicos.</p>
+            </div>
+            <!-- Habilidade 5 -->
+            <div class="skill">
+                <div class="icon-circle">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Atualidade</h3>
+                <p>Informações locais em tempo real.</p>
+            </div>
         </div>
+        <!-- Fim das habilidades -->
+    
+        <!-- Separador inferior -->
+        <div class="svg-inverse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,100 Q100,0 200,100" fill="#fff"></path>
+            </svg>
+        </div>
+        <!-- Fim do separador inferior -->
+    </section>
+    
+    <!-- End Sobre Nós -->
 
+    <!-- Profissionais -->
+    <section id="profissionais" class="profissionais-section"> 
+          <!-- Separador -->
+          <div class="svg-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,0 Q 100,100 200,0" fill="#ffff" />
+            </svg>
+        </div>
+        <!-- End Separador -->
+
+        <h1 class="heading">Nossos <span>Profissionais</span></h1>
+
+        <!-- Separador -->
+        <div class="svg-inverse">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" preserveAspectRatio="none">
+                <path d="M0,100 Q 100,0 200,100" fill="#ffff" />
+            </svg>
+        </div>
+        <!-- End Separador -->
+    </section>
+    <!-- End Profissionais -->
+
+    <!-- feedback -->
+    <section id="feedback" class="feedback-section">
+        <h1 class="heading">Feedback <span>Jornal</span></h1>
+    </section>
+    <!-- End feedback -->
+
+ 
+    <!-- Separador -->
+    <div class="custom-shape-divider-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
     </div>
+    <!-- End Separador -->
 
+<<<<<<< HEAD
 </section>
 <section class="services" id="services">
 
@@ -327,30 +575,70 @@
             window.location.href = "tmpl/pagamento.html";  
         } else {
             alert("Senha incorreta. Acesso negado.");
+=======
+    <section id="contato" class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Links Rápidos</h3>
+                <a href="#home"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="#noticias"><i class="fas fa-angle-right"></i> Notícias</a>
+                <a href="#eventos"><i class="fas fa-angle-right"></i> Eventos</a>
+                <a href="#horoscopo"><i class="fas fa-angle-right"></i> Horóscopo da Rosa</a>
+                <a href="#comerciais"><i class="fas fa-angle-right"></i> Nossos Comerciais</a>
+                <a href="#sobre-nos"><i class="fas fa-angle-right"></i> Sobre Nós</a>
+                <a href="#profissionais"><i class="fas fa-angle-right"></i> Nossos Profissionais</a>
+                <a href="#feedback"><i class="fas fa-angle-right"></i> Feedback Jornal</a>
+                <a href="#contato"><i class="fas fa-angle-right"></i> Contato</a>
+            </div>
+
+            <div class="box">
+                <h3>Contato</h3>
+                <a href="#contato"><i class="fas fa-phone"></i> (055) 352-938 -> Dayse Bettencourt</a>
+                <a href="#contato"><i class="fas fa-phone"></i> (055) 661-896 -> Franchesca Alba</a>
+                <a href="#contato"><i class="fas fa-phone"></i> (055) 268-105 -> Catrina Martinez</a>
+                <a href="#contato"><i class="fas fa-envelope"></i> contato@exemplo.com</a>
+                <a href="#contato"><i class="fas fa-map-marker-alt"></i> Life Invader proximo ao banco do número 6</a>
+            </div>
+
+            <div class="box">
+                <h3>Siga-nos</h3>
+                <a href="https://x.com/AnjosNews">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#e8786e" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                    </svg>
+                    Twitter
+                </a>
+                
+                <a href="https://www.youtube.com/@AnjosNews-ct9ql"><i class="fab fa-youtube"></i> Youtube</a>
+            </div>
+        </div>
+        <div class="credit">Created by <span>Alanys Prates</span> | Para cidade dos Anjos</div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script>
+        function checkPassword() {
+            const password = prompt("Digite a senha para acessar a página de pagamento:");
+
+            if (password === "funcionarioanjo") {
+                window.location.href = "tmpl/pagamento.html";
+            } else {
+                alert("Senha incorreta. Acesso negado.");
+            }
+>>>>>>> f0b273c2f011daeb59f5c98950f70d98ec71a21a
         }
-    }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
+    </script>
 </body>
+
 </html>
