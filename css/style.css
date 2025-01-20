@@ -752,6 +752,57 @@ a.arearestri {
     margin-right: 20px;
 }
 
+.profissionais-section .carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profissionais-section .carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.profissionais-section .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.profissionais-section .carousel-item {
+    width: 40%; /* Ajuste o tamanho conforme necessário */
+    padding: 1rem;
+    margin: 0 0.5rem; /* Espaçamento entre os itens */
+    text-align: center;
+    box-sizing: border-box;
+    background-color: var(--rosa-intenso);
+    box-shadow: 0 6px 12px var(--box-shadow);
+    border-radius: 8px;
+}
+
+.profissionais-section .carousel-item img {
+    width: 90%; /* Ajuste a largura da imagem */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.profissionais-section .carousel h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.profissionais-section .carousel p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
 /* Feedback */
 .feedback-section {
     position: relative;
