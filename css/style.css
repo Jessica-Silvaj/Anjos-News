@@ -68,7 +68,8 @@ html{
     align-items: center;
     justify-content: space-between;
     padding:1rem 5%;
-    height: 22%;
+    height: 16%;
+    border-radius: 6px;
 }
 
 .header .logo{
@@ -751,10 +752,7 @@ a.arearestri {
     margin-right: 20px;
 }
 
-
-
 /* Feedback */
-
 .feedback-section {
     position: relative;
     text-align: center;
@@ -763,6 +761,101 @@ a.arearestri {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.feedback-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.feedback-section .comentarios-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-section .comentario-item {
+    width: 55%;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: var(--rosa-fraco);
+    box-shadow: 0 6px 12px var(--box-shadow);
+    border-radius: 8px;
+
+}
+
+.feedback-section .container .comentario-item .user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feedback-section .container .comentario-item .user img.user-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.feedback-section .container .comentario-item .user .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-section .container .comentario-item .user h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+.feedback-section .container .comentario-item .user .stars {
+    font-size: 1.5rem;
+    color: var(--rosa-intenso);
+}
+
+.feedback-section .container .comentario-item .fa-quote-right {
+    margin-left: auto;
+    font-size: 5rem;
+    color: var(--rosa-intenso);
+}
+
+.feedback-section .container .comentario-item p {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-style: italic;
+}
+
+.feedback-section .prev, .feedback-section .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: var(--rosa-intenso);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.feedback-section .prev {
+    left: 0;
+}
+
+.feedback-section .next {
+    right: 0;
+}
+
 
 
 
