@@ -1,6 +1,6 @@
-const API_KEY = 'anjosnews'; // Substitua pela sua API Key
-const CHANNEL_ID = '@AnjosNews-ct9ql'; // Substitua pelo ID do seu canal
-const MAX_RESULTS = 5;
+const API_KEY = 'AIzaSyDPcaYS2D_QtJPaJV3xY1i-sszE-c-Nqes'; // Substitua pela sua API Key
+const CHANNEL_ID = 'UCi7v9bUdO0dHS5mB7n4zclw'; // Substitua pelo ID do seu canal
+const MAX_RESULTS = 4;
 
 async function fetchVideos() {
   const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet&order=date&maxResults=${MAX_RESULTS}`;
@@ -27,6 +27,7 @@ function displayVideos(videos) {
           <img src="${thumbnails.medium.url}" alt="${title}" />
         </a>
         <h3>${title}</h3>
+        <br/>
         <p>${description}</p>
       </div>
     `;
